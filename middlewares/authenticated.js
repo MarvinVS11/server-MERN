@@ -8,7 +8,7 @@ function asureAuth(req, res, next){
   }
      
     const token = req.headers.authorization.replace("Bearer ", "");
-   // console.log("token",token)
+   //  console.log("token",token)
     try {
         const payload =jwt.decoded(token);
         const {exp}= payload;
@@ -22,7 +22,7 @@ function asureAuth(req, res, next){
         res.status(400).send({msg: "Token invalido"})
         
     }
-   
+    
 
 }
 module.exports={

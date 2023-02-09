@@ -1,5 +1,5 @@
 const DB_USER="admin";
-const DB_PASSWORD="admin123456";
+const DB_PASSWORD="Laukus200";
 const DB_HOST="web-personal.zfxnjjd.mongodb.net";
 
 const API_VERSION = "v1";
