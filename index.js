@@ -2,7 +2,12 @@ const mongoose= require("mongoose");
 const {DB_USER, DB_PASSWORD, DB_HOST, IP_SERVER, API_VERSION}= require("./constants");
 const app = require("./app")
 const PORT= process.env.POST || 3977;
-//mongoose.set("strictQuery", true);
+
+// mongoose.connect(
+//    `mongodb+srv://${DB_USER}:${encodeURIComponent(DB_PASSWORD)}@${DB_HOST}/?retryWrites=true&w=majority`
+//    ) .then(() =>{ console.log("Conexion exitosa!!")})
+//      .catch((error) => console.error("Error al conectarse a la Base de datos", error));
+ 
 mongoose.connect(
 `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/`,
 (error)=>{

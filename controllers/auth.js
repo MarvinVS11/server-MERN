@@ -7,6 +7,15 @@ function register(req, res){
      
     if(!email)res.status(400).send({msg:"El email es obligatorio"});
     if(!password) res.status(400).send({msg:"La contraseña es obligatoria"});
+    // if(!email)
+    // {
+    //     return res.status(400).send({msg:"El email es obligatorio"});
+
+    // }
+    // if(!password) {
+
+    //     return res.status(400).send({msg:"La contraseña es obligatoria"});
+    // } 
 
     const user = new User ({
         firstname,
